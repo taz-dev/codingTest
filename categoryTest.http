@@ -1,0 +1,19 @@
+### 1. 카테고리 추가
+POST http://localhost:8080/categories/add?parentId=14&childId=9&name=로제
+Accept: application/json
+
+### 2. 카테고리 추가 (익명게시판)
+POST http://localhost:8080/categories/add?parentId=0&childId=6&name=익명게시판
+Accept: application/json
+
+### 3. 전체 카테고리 조회
+GET http://localhost:8080/categories/list
+Accept: application/json
+
+### 4. 식별자로 카테고리 조회
+GET http://localhost:8080/categories/id/10
+Accept: application/json
+
+### 5. 이름으로 카테고리 조회
+GET http://localhost:8080/categories/name/방탄소년단
+Accept: application/json
